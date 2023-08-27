@@ -1,11 +1,10 @@
-public class Student implements Present{
+public class Student implements Present, Major{
     @Override
     public void present() {
-        major();
         System.out.println("The student presents his final project.");
     }
 
-    private void major() {
+    public void major() {
         System.out.println("A student majors in linguistics.");
     }
 }

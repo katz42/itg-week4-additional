@@ -5,11 +5,14 @@ public class _Main {
         Student student = new Student();
         University university = new University();
 
-        ToFound toFound  = new ToFound();
         ToPresent toPresent = new ToPresent();
+        ToMajor toMajor = new ToMajor();
+        ToLead toLead = new ToLead();
 
-        toFound.toFound(university);
+        toPresent.toPresent(university);
+        toLead.toLead(professor);
         toPresent.toPresent(professor);
+        toMajor.toMajor(student);
         toPresent.toPresent(student);
     }
 }
